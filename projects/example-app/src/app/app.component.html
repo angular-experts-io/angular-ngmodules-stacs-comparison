@@ -1,0 +1,62 @@
+<header class="fixed w-full font-display">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row class="gap-4">
+      <img
+        class="h-16 w-auto"
+        width="1100"
+        height="450"
+        ngSrc="assets/images/angular-experts-white.png"
+        alt="Angular Experts"
+        priority
+      />
+      <span class="text-blue-300 text-xl">NgModules vs STACs</span>
+      <span class="flex-1"></span>
+      <a
+        mat-flat-button
+        color="primary"
+        routerLink="home"
+        routerLinkActive="filter brightness-125"
+        >Home</a
+      >
+      <a
+        mat-flat-button
+        color="primary"
+        routerLink="todo-list-ngmodule"
+        routerLinkActive="filter brightness-125"
+        >Todo list @NgModule</a
+      >
+      <a
+        mat-flat-button
+        color="primary"
+        routerLink="todo-list-stac"
+        routerLinkActive="filter brightness-125"
+        >Todo list STACs</a
+      >
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>
+
+<main class="container mx-auto mt-24 flex-1 ">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="py-8 bg-blue-900 flex flex-col items-center justify-center">
+  <p class="text-blue-300 mb-4">
+    ©{{ year }} Made with ❤ by Tomas Trajan
+    <a
+      class="text-white hover:font-bold"
+      target="_blank"
+      href="https://twitter.com/tomastrajan"
+      >@tomastrajan</a
+    >
+  </p>
+  <a href="https://angularexperts.io" target="_blank">
+    <img
+      class="h-16 w-auto"
+      width="1100"
+      height="450"
+      ngSrc="assets/images/angular-experts-white.png"
+      alt="Angular Experts"
+    />
+  </a>
+</footer>

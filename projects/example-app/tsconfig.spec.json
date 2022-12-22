@@ -3,9 +3,12 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/spec",
+    "module": "es2020",
+    "esModuleInterop": true,
     "types": [
-      "jasmine"
-    ]
+      "jest"
+    ],
+    "allowJs": true
   },
   "include": [
     "src/**/*.spec.ts",
